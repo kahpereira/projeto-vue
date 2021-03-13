@@ -22,7 +22,7 @@
     <div>
       <v-tooltip v-if="!$vuetify.theme.dark" bottom>
         <template v-slot:activator="{ on, attrs }">
-          <v-btn v-on="on" v-bind="attrs" color="rgb(255, 0, 0, 0.1)" small fab @click="darkMode">
+          <v-btn v-on="on" v-bind="attrs" color="transparent" small fab @click="darkMode">
             <v-icon class="mr-1">mdi-moon-waxing-crescent</v-icon>
           </v-btn>
         </template>
@@ -31,7 +31,7 @@
 
       <v-tooltip v-else bottom>
         <template v-slot:activator="{ on, attrs }">
-          <v-btn v-on="on" v-bind="attrs" color="rgb(255, 0, 0, 0.1)" small fab @click="darkMode">
+          <v-btn v-on="on" v-bind="attrs" color="transparent" small fab @click="darkMode">
             <v-icon>mdi-white-balance-sunny</v-icon>
           </v-btn>
         </template>
